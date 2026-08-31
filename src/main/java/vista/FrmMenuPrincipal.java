@@ -204,6 +204,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         btnReportes.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
         btnReportes.setText("REPORTES");
         btnReportes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReportes.addActionListener(this::btnReportesActionPerformed);
         panelRound1.add(btnReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, 175, 78));
 
         btnUsuarios.setBackground(new java.awt.Color(153, 255, 153));
@@ -321,6 +322,15 @@ this.dispose();
     
     this.dispose();
     }//GEN-LAST:event_btnUsuariosActionPerformed
+
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
+        // TODO add your handling code here:
+        FrmReportes ventanaReportes = new FrmReportes();
+        ventanaReportes.setVisible(true);
+    
+    this.dispose();
+        
+    }//GEN-LAST:event_btnReportesActionPerformed
 
     /**
      * @param args the command line arguments

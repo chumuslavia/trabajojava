@@ -161,6 +161,7 @@ public class FrmAnalisis extends javax.swing.JFrame {
         btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnVolver.setText("VOLVER");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.addActionListener(this::btnVolverActionPerformed);
         panelRound1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 560, -1, -1));
 
         getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 980, 610));
@@ -170,6 +171,13 @@ public class FrmAnalisis extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // TODO add your handling code here:
+        FrmMenuPrincipal menu = new FrmMenuPrincipal();
+    menu.setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments

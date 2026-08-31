@@ -82,6 +82,7 @@ public class FrmReportes extends javax.swing.JFrame {
         btnHistorialPagos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnHistorialPagos.setText("HISTORIAL DE PAGOS");
         btnHistorialPagos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHistorialPagos.addActionListener(this::btnHistorialPagosActionPerformed);
         panelRound1.add(btnHistorialPagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 132, 220, 81));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/yopng.png"))); // NOI18N
@@ -91,12 +92,14 @@ public class FrmReportes extends javax.swing.JFrame {
         btnReportePacientes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnReportePacientes.setText("REPORTE DE PACIENTES");
         btnReportePacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReportePacientes.addActionListener(this::btnReportePacientesActionPerformed);
         panelRound1.add(btnReportePacientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 240, 81));
 
         btnIngresos.setBackground(new java.awt.Color(153, 255, 153));
         btnIngresos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnIngresos.setText("INGRESOS");
         btnIngresos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnIngresos.addActionListener(this::btnIngresosActionPerformed);
         panelRound1.add(btnIngresos, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 302, 193, 81));
 
         btnCerrar.setBackground(new java.awt.Color(255, 0, 0));
@@ -110,12 +113,14 @@ public class FrmReportes extends javax.swing.JFrame {
         btnDeudasPendientes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnDeudasPendientes.setText("DEUDAS PENDIENTES");
         btnDeudasPendientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeudasPendientes.addActionListener(this::btnDeudasPendientesActionPerformed);
         panelRound1.add(btnDeudasPendientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(633, 132, 220, 81));
 
         btnCostosServicio1.setBackground(new java.awt.Color(153, 255, 153));
         btnCostosServicio1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnCostosServicio1.setText("COSTOS POR SERVICIO");
         btnCostosServicio1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCostosServicio1.addActionListener(this::btnCostosServicio1ActionPerformed);
         panelRound1.add(btnCostosServicio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, 230, 81));
 
         getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 960, 600));
@@ -131,6 +136,46 @@ public class FrmReportes extends javax.swing.JFrame {
         this.dispose();
         new FrmMenuPrincipal().setVisible(true);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnHistorialPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistorialPagosActionPerformed
+        // TODO add your handling code here:
+        FrmHistorialPagos ventanaHistorialPagos = new FrmHistorialPagos();
+        ventanaHistorialPagos.setVisible(true);
+    
+    this.dispose();
+    }//GEN-LAST:event_btnHistorialPagosActionPerformed
+
+    private void btnDeudasPendientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeudasPendientesActionPerformed
+        // TODO add your handling code here:
+        FrmDeudasPendientes ventanaDeudasPendeientes = new FrmDeudasPendientes();
+        ventanaDeudasPendeientes.setVisible(true);
+    
+    this.dispose();
+    }//GEN-LAST:event_btnDeudasPendientesActionPerformed
+
+    private void btnCostosServicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCostosServicio1ActionPerformed
+        // TODO add your handling code here:
+        FrmCostosServicio ventanaCostosServicio = new FrmCostosServicio();
+        ventanaCostosServicio.setVisible(true);
+    
+    this.dispose();
+    }//GEN-LAST:event_btnCostosServicio1ActionPerformed
+
+    private void btnIngresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresosActionPerformed
+        // TODO add your handling code here:
+        FrmReporteIngresos ventanaReporteIngresos = new FrmReporteIngresos();
+        ventanaReporteIngresos.setVisible(true);
+    
+    this.dispose();
+    }//GEN-LAST:event_btnIngresosActionPerformed
+
+    private void btnReportePacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportePacientesActionPerformed
+        // TODO add your handling code here:
+        FrmReportePacientes ventanaReportePacientes = new FrmReportePacientes();
+        ventanaReportePacientes.setVisible(true);
+    
+    this.dispose();
+    }//GEN-LAST:event_btnReportePacientesActionPerformed
 
     /**
      * @param args the command line arguments

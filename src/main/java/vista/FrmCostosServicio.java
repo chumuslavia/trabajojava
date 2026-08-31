@@ -17,6 +17,7 @@ public class FrmCostosServicio extends javax.swing.JFrame {
      */
     public FrmCostosServicio() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
